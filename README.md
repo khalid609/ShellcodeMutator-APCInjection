@@ -5,7 +5,7 @@ This project demonstrates various offensive security techniques including XOR en
 
 ## Techniques Used
 
-1. **XOR Encoding/Decoding**: A simple encryption technique used to obfuscate data.
+1. **XOR Encoding/Decoding**: A simple encoding technique used to obfuscate data.
 2. **AES Decryption**: Uses the Windows CryptoAPI to decrypt data.
 3. **Shellcode Mutation**: Adds NOPs to the shellcode to evade signature-based detection.
 4. **APC Injection**: Uses Asynchronous Procedure Calls to execute shellcode in a remote process.
