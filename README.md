@@ -2,13 +2,43 @@
 # Shellcode Mutator and APC Injection Tool
 
 This project demonstrates various offensive security techniques including XOR encoding/decoding, AES encryption, shellcode mutation, and APC injection. The purpose of this project is to provide a tool for educational and ethical hacking purposes. Use this tool responsibly and only in environments where you have permission to test.
+# Techniques Used in the Shellcode Mutator and APC Injection Tool
 
-## Techniques Used
+## XOR Encoding/Decoding
+**Description**:
+XOR encoding is a simple encryption technique used to obfuscate data. It involves applying the XOR operation between each byte of the data and a key.
 
-1. **XOR Encoding/Decoding**: A simple encoding technique used to obfuscate data.
-2. **AES Decryption**: Uses the Windows CryptoAPI to decrypt data.
-3. **Shellcode Mutation**: Adds NOPs to the shellcode to evade signature-based detection.
-4. **APC Injection**: Uses Asynchronous Procedure Calls to execute shellcode in a remote process.
+**Purpose**:
+To obfuscate the shellcode, making it harder to detect by simple signature-based detection mechanisms.
+
+---
+
+## AES Decryption
+**Description**:
+AES (Advanced Encryption Standard) is a strong encryption algorithm used to decrypt data. In this project, the Windows CryptoAPI is used for AES decryption.
+
+**Purpose**:
+To securely encrypt and decrypt the shellcode, ensuring that it is not easily readable or detectable by static analysis tools.
+
+---
+
+## Shellcode Mutation
+**Description**:
+This technique involves adding NOPs (No Operation instructions) to the shellcode to alter its signature.
+
+**Purpose**:
+To evade signature-based detection by changing the signature of the shellcode.
+
+---
+
+## APC Injection
+**Description**:
+APC (Asynchronous Procedure Call) injection is a technique used to execute shellcode within the context of another process by queuing an APC to a thread in the target process.
+
+**Purpose**:
+To execute shellcode within a legitimate process, which can help evade detection and achieve persistence or privilege escalation.
+
+
 
 ## Files
 
