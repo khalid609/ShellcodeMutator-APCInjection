@@ -4,7 +4,7 @@
 This project demonstrates various offensive security techniques including XOR encoding/decoding, AES encryption, shellcode mutation, and APC injection. The purpose of this project is to provide a tool for educational and ethical hacking purposes. Use this tool responsibly and only in environments where you have permission to test.
 # Techniques Used in the Shellcode Mutator and APC Injection Tool
 
-## XOR Encoding/Decoding
+## 1. XOR Encoding/Decoding
 **Description**:
 XOR encoding is a simple encryption technique used to obfuscate data. It involves applying the XOR operation between each byte of the data and a key.
 
@@ -13,7 +13,7 @@ To obfuscate the shellcode, making it harder to detect by simple signature-based
 
 ---
 
-## AES Decryption
+## 2. AES Decryption
 **Description**:
 AES (Advanced Encryption Standard) is a strong encryption algorithm used to decrypt data. In this project, the Windows CryptoAPI is used for AES decryption.
 
@@ -22,7 +22,7 @@ To securely encrypt and decrypt the shellcode, ensuring that it is not easily re
 
 ---
 
-## Shellcode Mutation
+## 3. Shellcode Mutation
 **Description**:
 This technique involves adding NOPs (No Operation instructions) to the shellcode to alter its signature.
 
@@ -31,7 +31,7 @@ To evade signature-based detection by changing the signature of the shellcode.
 
 ---
 
-## APC Injection
+## 4. APC Injection
 **Description**:
 APC (Asynchronous Procedure Call) injection is a technique used to execute shellcode within the context of another process by queuing an APC to a thread in the target process.
 
