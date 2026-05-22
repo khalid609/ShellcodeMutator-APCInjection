@@ -194,6 +194,8 @@ Follow these steps in order before building.
 ### Step 1 — Generate your shellcode
  
 Generate x64 shellcode using a C2 framework (e.g. Havoc, Cobalt Strike, MSF) then **xor it** and **AES-ECB encrypt** it with a key of your choice (16, 24, or 32 bytes).
+**for encode use https://github.com/khalid609/Shellcode-Encoder**
+**for encryption use https://github.com/khalid609/AES-Shellcode-Encryptor**
  
 ### Step 2 — Fill in `demon.x64.h`
  
